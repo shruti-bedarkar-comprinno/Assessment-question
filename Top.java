@@ -9,7 +9,7 @@ public class Top {
             map.put(num, map.getOrDefault(num, 0) + 1);
         }
 
-        
+    
         PriorityQueue<Integer> pq = new PriorityQueue<>(
             (a, b) -> map.get(a) - map.get(b)
         );
